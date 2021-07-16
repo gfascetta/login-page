@@ -62,7 +62,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
 }
 
 .form-field label {
@@ -79,13 +79,14 @@ body {
     background-color: transparent;
     border: 2px solid var(--color-borde-osc);
     border-radius: 20px;
+    /* transition por hover */
     transition-duration: 2s;
     transition-property: background-color, opacity;
     transition-timing-function: ease;
 }
 
 .form-field input:hover {
-    background-color: rgba(253, 253, 253, 0.795);
+    background-color: rgba(253, 253, 253, 0.897);
 }
 
 #login-button {
@@ -99,6 +100,7 @@ body {
     background-color: rgba(255, 255, 255, 0.692);
     border: 2px solid var(--color-borde-osc);
     border-radius: 20px;
+    /* transition por hover */
     transition-duration: 2s;
     transition-property: background-color;
     transition-timing-function: ease;
@@ -109,11 +111,15 @@ body {
 }
 
 
+/* ************************************************************************ */
+
+
 /*  ------------responsive-------- */
 
-@media (max-width:400px) {
+@media (max-width:450px) {
+    /* PROBLEMA: EL FORM CONTAINER QUEDA DESCENTRADO HORIZONTALMENTE */
     .form-container {
-        width: 95%;
+        width: 90%;
     }
     .form-field input {
         width: 80%;
@@ -152,9 +158,10 @@ body {
 }
 
 
-/* animacion del fondo----------------- */
+/* ********************************************************************************* */
 
-.ripple-background {}
+
+/* animacion del fondo----------------- */
 
 .circle {
     position: absolute;
