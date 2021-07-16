@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fafafa;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(219, 232, 248);
+}
+
+.form-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(150, 182, 252);
+    border-radius: 30px;
+    background: #6190E8;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-title {
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    margin: 5% 0 4% 0;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.form-field label {
+    font-weight: 600;
+    text-align: center;
+    margin: 3% 0;
+}
+
+.form-field input {
+    appearance: none;
+    outline: 0;
+    height: 2.3rem;
+    width: 50%;
+    background-color: transparent;
+    border: 2px solid rgb(165, 193, 247);
+    border-radius: 20px;
+    transition-duration: 2s;
+    transition-property: background-color, opacity;
+    transition-timing-function: ease;
+}
+
+.form-field input:hover {
+    background-color: lavenderblush;
+    opacity: 70%;
+}
+
+#login-button {
+    appearance: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    height: 2.3rem;
+    width: 50%;
+    margin: 2%;
+    background-color: ivory;
+    opacity: 70%;
+    border: 2px solid rgb(165, 193, 247);
+    border-radius: 20px;
+    transition-duration: 2s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+}
+
+#login-button:hover {
+    opacity: 100%;
+}
+
+
+/*  responsive */
+
+@media (max-width:400px) {
+    .form-container {
+        width: 100%;
+    }
+    .form-field input {
+        width: 80%;
+    }
+}
