@@ -1,3 +1,10 @@
+:root {
+    --color-borde-osc: rgb(255, 153, 94);
+    --color-inicial-circulo: #ffa53f;
+    --color-final-circulo: ivory;
+    --color-fondo-claro: #fff9dc;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(219, 232, 248);
+    background-color: var(--color-fondo-claro);
 }
 
 .form-container {
@@ -21,14 +28,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgb(150, 182, 252);
+    border: 2px solid var(--color-borde-osc);
     border-radius: 30px;
-    background: #6190E8;
-    /* fallback for old browsers */
+    z-index: 1;
+    background-color: rgba(255, 255, 240, 0.329);
+    /* background: #6190E8;
     background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A7BFE8, #6190E8);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); */
 }
 
 .main-title {
@@ -74,7 +80,7 @@ body {
     height: 2.3rem;
     width: 50%;
     background-color: transparent;
-    border: 2px solid rgb(165, 193, 247);
+    border: 2px solid var(--color-borde-osc);
     border-radius: 20px;
     transition-duration: 2s;
     transition-property: background-color, opacity;
@@ -82,8 +88,7 @@ body {
 }
 
 .form-field input:hover {
-    background-color: lavenderblush;
-    opacity: 70%;
+    background-color: rgba(253, 253, 253, 0.795);
 }
 
 #login-button {
@@ -94,17 +99,16 @@ body {
     height: 2.3rem;
     width: 50%;
     margin: 2%;
-    background-color: ivory;
-    opacity: 70%;
-    border: 2px solid rgb(165, 193, 247);
+    background-color: rgba(255, 255, 255, 0.692);
+    border: 2px solid var(--color-borde-osc);
     border-radius: 20px;
     transition-duration: 2s;
-    transition-property: opacity;
+    transition-property: background-color;
     transition-timing-function: ease;
 }
 
 #login-button:hover {
-    opacity: 100%;
+    background-color: white;
 }
 
 
@@ -125,64 +129,64 @@ body {
 .circle {
     position: absolute;
     border-radius: 50%;
-    background: white;
+    background: var(--color-inicial-circulo);
     animation: ripple 15s infinite;
-    box-shadow: 0px 0px 1px 0px #508fb9;
+    box-shadow: 0px 0px 1px 0px var(--color-final-circulo);
 }
 
 .small {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     left: -100px;
-    bottom: -100px;
+    bottom: -50px;
 }
 
 .medium {
     width: 400px;
     height: 400px;
-    left: -200px;
-    bottom: -200px;
+    left: -100px;
+    bottom: -100px;
 }
 
 .large {
     width: 600px;
     height: 600px;
-    left: -300px;
-    bottom: -300px;
+    left: -200px;
+    bottom: -200px;
 }
 
 .xlarge {
     width: 800px;
     height: 800px;
-    left: -400px;
-    bottom: -400px;
+    left: -300px;
+    bottom: -300px;
 }
 
 .xxlarge {
     width: 1000px;
     height: 1000px;
-    left: -500px;
-    bottom: -500px;
+    left: -400px;
+    bottom: -400px;
 }
 
 .shade1 {
-    opacity: 0.2;
-}
-
-.shade2 {
     opacity: 0.5;
 }
 
-.shade3 {
+.shade2 {
     opacity: 0.7;
 }
 
-.shade4 {
+.shade3 {
     opacity: 0.8;
 }
 
-.shade5 {
+.shade4 {
     opacity: 0.9;
+}
+
+.shade5 {
+    opacity: 1;
 }
 
 @keyframes ripple {
