@@ -2,7 +2,7 @@
     --color-borde-osc: rgb(255, 153, 94);
     --color-inicial-circulo: #ffa53f;
     --color-final-circulo: ivory;
-    --color-fondo-claro: #fff9dc;
+    --color-fondo-claro: #fffcec;
 }
 
 * {
@@ -31,7 +31,8 @@ body {
     border: 2px solid var(--color-borde-osc);
     border-radius: 30px;
     z-index: 1;
-    background-color: rgba(255, 255, 240, 0.329);
+    background-color: rgba(255, 255, 240, 0.418);
+    padding-bottom: 2%;
 }
 
 .main-title {
@@ -79,6 +80,9 @@ body {
     background-color: transparent;
     border: 2px solid var(--color-borde-osc);
     border-radius: 20px;
+    /* texto */
+    font-family: inherit;
+    font-size: inherit;
     /* transition por hover */
     transition-duration: 2s;
     transition-property: background-color, opacity;
@@ -86,7 +90,7 @@ body {
 }
 
 .form-field input:hover {
-    background-color: rgba(253, 253, 253, 0.897);
+    background-color: rgba(253, 253, 253, 0.932);
 }
 
 #login-button {
@@ -97,7 +101,7 @@ body {
     height: 2.3rem;
     width: 50%;
     margin: 2%;
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(253, 243, 107, 0.692);
     border: 2px solid var(--color-borde-osc);
     border-radius: 20px;
     /* transition por hover */
@@ -107,7 +111,7 @@ body {
 }
 
 #login-button:hover {
-    background-color: white;
+    background-color: rgba(55, 255, 188, 0.89);
 }
 
 
@@ -162,6 +166,11 @@ body {
 
 
 /* animacion del fondo----------------- */
+
+
+/* .ripple-background {
+    overflow-x: hidden;
+} */
 
 .circle {
     position: absolute;
